@@ -7,8 +7,7 @@ return {
 					procMacro = {
 						enable = true,
 						ignored = {
-							["napi-derive"] = { "napi" },
-							["async-recursion"] = { "async_recursion" },
+							["async-trait"] = false,
 						},
 					},
 				},
