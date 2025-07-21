@@ -4,3 +4,4 @@
 local opt = vim.opt
 opt.termguicolors = false
 vim.o.background = "dark"
+vim.g.loaded_matchparen = 1
