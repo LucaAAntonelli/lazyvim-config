@@ -4,6 +4,9 @@ return {
 		server = {
 			default_settings = {
 				["rust-analyzer"] = {
+					cargo = {
+						loadOutDirsFromCheck = true,
+					},
 					procMacro = {
 						enable = true,
 						ignored = {
