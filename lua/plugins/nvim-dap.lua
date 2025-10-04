@@ -1,14 +1,18 @@
 return {
 	"mfussenegger/nvim-dap",
+	dependencies = {
+		"mason-org/mason.nvim",
+	},
 	config = function()
 		local dap = require("dap")
+		local codelldb_bin = vim.fn.exepath("codelldb")
 
 		dap.adapters.codelldb = {
 			type = "server",
 			port = "${port}",
 			executable = {
 				-- Change this to your path!
-				command = "/opt/codelldb/adapter/codelldb",
+				command = codelldb_bin,
 				args = { "--port", "${port}" },
 			},
 		}
