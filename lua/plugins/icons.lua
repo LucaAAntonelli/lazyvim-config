@@ -1,6 +1,6 @@
 return {
 	{
-		"echasnovski/mini.icons",
+		"mini/mini.icons",
 		enabled = false,
 	},
 	{
